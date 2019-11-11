@@ -16,7 +16,7 @@ public class controldb {
 			System.out.println("id입력하세요\n");
 			Scanner sc2= new Scanner(System.in);
 			userid=sc2.next();
-		GB.showGB(userid);
+			GB.showGB(userid);
 		}else {
 			System.out.println("방명록보고싶은 사용자id,추가하는 사용자id,내용을 입력하세요\n");
 			Scanner sc3= new Scanner(System.in);
@@ -27,6 +27,7 @@ public class controldb {
 			GB.addGB(userid, adduserid,content);
 			GB.showGB(userid);
 		}
+		GB.closeDB();
 	}
 
 	
