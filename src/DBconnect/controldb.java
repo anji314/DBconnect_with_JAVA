@@ -4,6 +4,10 @@ public class controldb {
 	public static void main(String[] args) { 
 		DBconnection t = new DBconnection(); //DAO를 통해 접속을 확인합니다. 
 		guestbook GB=new guestbook();
+		FriendList FL=new FriendList();
+		FL.showlist("anji314");
+		FL.close();
+		/*
 		String userid,adduserid,content;
 		int ck;
 		System.out.println("1번 : 방명록 보기, 2번 : 방명록 추가\n");
@@ -27,7 +31,9 @@ public class controldb {
 			GB.addGB(userid, adduserid,content);
 			GB.showGB(userid);
 		}
-		GB.closeDB();
+		
+		GB.closeDB();*/
+		
 	}
 
 	
